@@ -4,7 +4,7 @@ use std::{collections::{ HashMap}, fs};
 use anyhow::{Result, Context};
 use clap::Parser;
 use portfolio_checker::processor::aggregate_balances;
-use portfolio_checker::models::{AlchemyRequest, AddressInput,TokenResponse, AlchemyResponse,Args};
+use portfolio_checker::models::{AlchemyRequest, AddressInput,Args};
 use portfolio_checker::api::get_token_bal;
 use portfolio_checker::output::print_balances;
 

@@ -22,28 +22,16 @@ pub struct AlchemyRequest {
 
 #[derive(Deserialize, Debug)]
 pub struct TokenMetadata {
-    currency: Option<String>,
-    value: Option<u128>,
     pub decimals: Option<u8>,
     pub name:Option<String>,
     pub symbol: Option<String>
 }
 
-#[derive(Deserialize, Debug)]
-struct TokenPrices {
-    decimals: Option<u8>,
-    name: Option<String>,
-    symbol: Option<String>,
-}
 
 #[derive(Deserialize, Debug)]
 pub struct TokenResponse {
-    address: String,
-    network: String,
-    tokenAddress: Option<String>,
     pub tokenBalance: String,
     pub tokenMetadata: TokenMetadata,
-    tokenPrices: Vec<TokenPrices>,
 }
 
 #[derive(Deserialize, Debug)]
