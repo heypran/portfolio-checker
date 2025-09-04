@@ -8,4 +8,6 @@ clap = { version = "4.0", features = ["derive"] }  # Command-line argument parsi
 reqwest = { version = "0.11", features = ["json"] }  # HTTP client for API calls
 serde = { version = "1.0", features = ["derive"] }  # JSON serialization/deserialization
 tokio = { version = "1.0", features = ["full"] }  # Async runtime for handling requests
+serde_json = { version = "1.0", features = ["raw_value"] }
 anyhow = "1.0"  # Error handling
+prettytable = "0.10"
